@@ -361,7 +361,7 @@ window.plugin.drawTools.optCopy = function() {
       if (stockWarnings.unknown) stockWarnTexts.push('Warning: UNKNOWN ITEM TYPE');
 
       var html = '<p><a onclick="$(\'.ui-dialog-drawtoolsSet-copy textarea\').select();">Select all</a> and press CTRL+C to copy it.</p>'
-                +'<textarea readonly onclick="$(\'.ui-dialog-drawtoolsSet-copy textarea\').select();">'+window.localStorage[window.plugin.drawTools.KEY_STORAGE]+'</textarea>'
+                +'<textarea readonly onclick="$(\'.ui-dialog-drawtoolsSet-copy textarea\').select();">'+localStorage[window.plugin.drawTools.KEY_STORAGE]+'</textarea>'
                 +'<p>or, export as a link for the standard intel map (for non IITC users)</p>'
                 +'<input onclick="event.target.select();" type="text" size="90" value="'+stockUrl+'"/>';
       if (stockWarnTexts.length>0) {
